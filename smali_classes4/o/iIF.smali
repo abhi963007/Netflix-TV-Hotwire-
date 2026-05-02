@@ -1,0 +1,67 @@
+.class public final Lo/iIF;
+.super Lo/iIG;
+.source ""
+
+# interfaces
+.implements Lo/hJZ;
+
+
+# instance fields
+.field private a:Lo/iIC;
+
+.field public final c:Lo/fNu;
+
+
+# direct methods
+.method public constructor <init>(Lo/fOr;Lo/fNu;ILjava/lang/String;)V
+    .locals 8
+
+    .line 4
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v6, p4
+
+    move v7, p3
+
+    .line 20
+    invoke-direct/range {v1 .. v7}, Lo/iIG;-><init>(Lo/fOr;Ljava/lang/String;Ljava/lang/String;Lo/fFs;Ljava/lang/String;I)V
+
+    .line 23
+    iput-object p2, p0, Lo/iIF;->c:Lo/fNu;
+
+    .line 27
+    new-instance p1, Lo/iIC;
+
+    invoke-direct {p1, p0}, Lo/iIC;-><init>(Lo/iIF;)V
+
+    .line 30
+    iput-object p1, p0, Lo/iIF;->a:Lo/iIC;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final av()Lcom/netflix/model/leafs/VideoInfo$TopTenBoxart;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lo/iIF;->a:Lo/iIC;
+
+    return-object v0
+.end method

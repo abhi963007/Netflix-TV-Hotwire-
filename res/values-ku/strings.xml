@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Opolohalama yo-Netflix</string>
+    <string name="label_app_update_found">Opwa monika opolohalama yimwe yi pe. Owahala oku yi wedela?</string>
+    <string name="label_cancel">Alula</string>
+    <string name="label_check_ntwk">Oshikwa elektronika shoye otashi dulika itashi longo pamakufikufi opaintaneta Alikana Shilipaleka kutya omakufikufi oye opaItaneta otaalongo ndele toningi vali (%1$d).</string>
+    <string name="label_config_fetch_failed">Opena oupyakadi eshi toyi kepandja loNetflix. Aluka vali moshikando tashiya(%1$d).</string>
+    <string name="label_config_not_permitted">Opolohalama ei yoNetflix itayi dulu okulonga moshikwaelectronika shoye (%1$d).</string>
+    <string name="label_config_ssl_Error">Shilipaleka kutya oshikwaelektronika shoye osha kwatafana nomalungula oItaneta nosho yo efiku nosho yo efimbo lokuningifa oli li mondjila (%1$d).</string>
+    <string name="label_could_not_launch">Itashi dulu okuya kopolohalama yoNetflix</string>
+    <string name="label_drm_cdm_provisioning_failed">Ombili itatu dulu oku longifa o-Netflix Alikana tala opo pwanyolwa setting opo ne ninga omakwatathano noomalungula ndele to longifa opolohalama yoNetflix (%1$d).</string>
+    <string name="label_error">Epuko</string>
+    <string name="label_error_default">Ombili ota tu dulu okuya longifa o-Netflix Aluka vali moshikando tashiya. Ngeenge oupyakadi owa twikile ohatu ku indile wuye kepandja letu loNetflix (0000).</string>
+    <string name="label_exit">Ndjako</string>
+    <string name="label_launching_netflix">Otashi yi kepandja lopolohalama yoNetflix…</string>
+    <string name="label_mediadrm_error">Ombili itatu dulu oku longifa o-Netflix Alikana temununa opolohalama yoye yoNetflix (%1$d).</string>
+    <string name="label_mediadrm_resource_error">Oshikwa elektronika shoye kashina oikwa noipangifo yawana opo opolohalama yoNetflix yilongelemo(%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">Opolohalama ei yoNetflix itayi dulu okulonga moshikwaelektronika shoye (%1$d).</string>
+    <string name="label_ok">Oshili nawa</string>
+    <string name="label_preapp_continue_watching">twikila okutala</string>
+    <string name="label_preapp_genric_reco">Opolohalama yoNetflix otayi ku ladipike</string>
+    <string name="label_preapp_personal_reco">eetepo loNetflix%1$s</string>
+    <string name="label_reset">Ningulula</string>
+    <string name="label_status">Paife osho shi li ngaha</string>
+    <string name="label_waiting_network_connection">Owatelela ekwatafano lopamalungula oItaneta</string>
+    <string name="label_warning">Elondwelo</string>
+    <string name="label_whitelisting_error">Oshikwaeletronika eshi inashi longwa shilongifwe o-Netflix (%1$d).</string>
+    <string name="search_netflix">Konga oNetflix</string>
+</resources>

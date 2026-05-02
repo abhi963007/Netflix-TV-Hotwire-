@@ -1,0 +1,37 @@
+.class public final Lo/bkk$a;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo/bkk;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final d:Z
+
+
+# direct methods
+.method public constructor <init>(ZLjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-boolean p1, p0, Lo/bkk$a;->d:Z
+
+    .line 6
+    iput-object p2, p0, Lo/bkk$a;->a:Ljava/lang/String;
+
+    return-void
+.end method

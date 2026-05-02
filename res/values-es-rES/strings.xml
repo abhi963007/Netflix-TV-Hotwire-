@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">Hay disponible una nueva versión de la aplicación. ¿Quieres actualizar?</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_check_ntwk">Puede que el dispositivo no esté conectado a Internet. Asegúrate de que la conexión funciona e inténtalo de nuevo (%1$d).</string>
+    <string name="label_config_fetch_failed">Hay un problema con la conexión a Netflix. Vuelve a intentarlo más tarde (%1$d)).</string>
+    <string name="label_config_not_permitted">Esta versión de la aplicación de Netflix no es compatible con tu dispositivo (%1$d).</string>
+    <string name="label_config_ssl_Error">Asegúrate de que el dispositivo dispone de conexión a la red y de que los ajustes de fecha y hora son correctos (%1$d).</string>
+    <string name="label_could_not_launch">No se ha iniciado Netflix</string>
+    <string name="label_drm_cdm_provisioning_failed">No se ha podido conectar con el servicio de Netflix. Comprueba la configuración de red para conectarte a una red disponible y poder usar Netflix (%1$d).</string>
+    <string name="label_error">Error</string>
+    <string name="label_error_default">No se ha podido conectar con el servicio de Netflix. Vuelve a intentarlo más tarde. Si el problema continúa, visita el sitio web de Netflix (0000).</string>
+    <string name="label_exit">Salir</string>
+    <string name="label_launching_netflix">Iniciando Netflix…</string>
+    <string name="label_mediadrm_error">No se ha podido conectar con el servicio de Netflix. Vuelve a intentar reiniciar la aplicación de Netflix (%1$d).</string>
+    <string name="label_mediadrm_resource_error">Este dispositivo no dispone de recursos suficientes para Netflix (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">Esta versión de la aplicación de Netflix no es compatible con tu dispositivo (%1$d).</string>
+    <string name="label_ok">Aceptar</string>
+    <string name="label_preapp_continue_watching">Continuar viendo</string>
+    <string name="label_preapp_genric_reco">Netflix recomienda</string>
+    <string name="label_preapp_personal_reco">Recomendaciones de Netflix para %1$s</string>
+    <string name="label_reset">Restablecer</string>
+    <string name="label_status">Estado</string>
+    <string name="label_waiting_network_connection">Esperando conexión de red</string>
+    <string name="label_warning">Advertencia</string>
+    <string name="label_whitelisting_error">Este dispositivo no está optimizado para Netflix (%1$d)</string>
+    <string name="search_netflix">Buscar en Netflix</string>
+</resources>

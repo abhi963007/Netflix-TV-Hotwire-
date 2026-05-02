@@ -1,0 +1,31 @@
+.class public final Lo/yP;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static final c(Landroidx/compose/ui/Modifier;Lo/yK;)Landroidx/compose/ui/Modifier;
+    .locals 1
+
+    .line 3
+    new-instance v0, Lo/yN;
+
+    invoke-direct {v0, p1}, Lo/yN;-><init>(Lo/yK;)V
+
+    .line 6
+    invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->c(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final e()Lo/yK;
+    .locals 1
+
+    .line 3
+    new-instance v0, Lo/yL;
+
+    invoke-direct {v0}, Lo/yL;-><init>()V
+
+    return-object v0
+.end method

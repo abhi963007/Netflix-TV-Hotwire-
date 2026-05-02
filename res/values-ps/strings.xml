@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">د پروګرام نوی ورژن وموندل شو. آیا آپدیټ کوئ يي؟</string>
+    <string name="label_cancel">لغوه</string>
+    <string name="label_check_ntwk">شاید ستاسو آله له انټرنیټ سره وصل نه وی. باورې کړئ چې آړیکه مو کار کوي او بیا هڅه وکړئ ‏(%1$d)‏.</string>
+    <string name="label_config_fetch_failed">د‏ ‏Netflix‏ سره په وصلیدو کې کومه ستونزه شته. وروسته هڅه وکړئ ‏(%1$d)‏.</string>
+    <string name="label_config_not_permitted">د‏ ‏Netflix‏ دا ورژن ستاسو له آلې سره مطابقت نه کوي ‏(%1$d)‏.</string>
+    <string name="label_config_ssl_Error">باورې کړئ چې ستاسو آله د شبکې وصلیدو قابلیت لري او د وخت او نیټې تنظیمات هم سمه دی ‏(%1$d)‏.</string>
+    <string name="label_could_not_launch">Netflix‏ چالان نشو کړای</string>
+    <string name="label_drm_cdm_provisioning_failed">په پښنې مونږ د ‏Netflix‏ خدماتو ته و نه رسیدو. د یوی فعاله شبکې سره د وصلیدو او ‏Netflix‏ د کارولو لپاره د شبکې تنظیمات وګورئ (%1$d)‏.</string>
+    <string name="label_error">ستونزه</string>
+    <string name="label_error_default">په پښنې مونږ د ‏Netflix‏ خدماتو ته و نه رسیدو. وروسته هڅه وکړئ. که ستونزه دوام کوي نو د ‏Netflix‏ ویب پاڼه وګورئ (0000)‏.</string>
+    <string name="label_exit">وتل‏</string>
+    <string name="label_launching_netflix">Netflix‏ چالانوي…</string>
+    <string name="label_mediadrm_error">په پښنې مونږ د ‏Netflix‏ خدماتو ته و نه رسیدو. په مهربانۍ د ‏Netflix‏ پروګرام له سره چالان کړئ ‏(%1$d)‏.</string>
+    <string name="label_mediadrm_resource_error">دا آله د ‏Netflix‏ لپاره کافې منابع نلري ‏(%1$d)‏.</string>
+    <string name="label_mediadrm_widevine_not_l1_error">د‏ ‏Netflix‏ دا ورژن ستاسو له آلې سره مطابقت نه کوي ‏(%1$d)‏.</string>
+    <string name="label_ok">اوکی</string>
+    <string name="label_preapp_continue_watching">کتلو ته دوام ورکړئ</string>
+    <string name="label_preapp_genric_reco">Netflix‏ پیشنهادوي</string>
+    <string name="label_preapp_personal_reco">Netflix وړاندیز کوی %1$</string>
+    <string name="label_reset">بیا برابرول</string>
+    <string name="label_status">موقف‏</string>
+    <string name="label_waiting_network_connection">د شبکې اړیکې ته په تمه دی</string>
+    <string name="label_warning">اخطار</string>
+    <string name="label_whitelisting_error">دا آله د ‏Netflix‏ لپاره نده برابره شوي ‏(%1$d)</string>
+    <string name="search_netflix">د‏ ‏Netflix‏ لټون</string>
+</resources>

@@ -1,0 +1,178 @@
+.class public final Lcom/netflix/mediaclient/repository/SecurityRepository;
+.super Ljava/lang/Object;
+.source "SecurityRepository.java"
+
+
+# static fields
+.field private static final BOOTLOADER_PARAMETER_CERTIFICATION_VERSION:Ljava/lang/String; = "certification_version"
+
+.field private static final BOOTLOADER_PARAMETER_SDK_VERSION:Ljava/lang/String; = "sdk_version"
+
+.field private static final BOOTLOADER_PARAMETER_SDK_VERSION_VALUE:Ljava/lang/String; = "2017.1"
+
+.field private static final BOOTLOADER_PARAMETER_SOFTWARE_VERSION:Ljava/lang/String; = "sw_version"
+
+.field private static final ESN_DELIM:Ljava/lang/String; = "-"
+
+.field private static final MODEL_DELIM:Ljava/lang/String; = "_"
+
+.field public static final NCCP_VERSION:Ljava/lang/String; = "NCCP/3.0"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 48
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private static extractKey(Ljava/lang/String;)[B
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyString"
+        }
+    .end annotation
+
+    :try_start_0
+    const-string v0, "ISO-8859-1"
+
+    .line 114
+    invoke-virtual {p0, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 116
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw v0
+.end method
+
+.method public static getAlexaSkillId()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "amzn1.ask.skill.b406d94e-ca08-4790-92a8-bb99426529ce"
+
+    return-object v0
+.end method
+
+.method public static getBootloaderParameterCertificationVersion()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "certification_version"
+
+    return-object v0
+.end method
+
+.method public static getBootloaderParameterSdkVersion()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "sdk_version"
+
+    return-object v0
+.end method
+
+.method public static getBootloaderParameterSdkVersionValue()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "2017.1"
+
+    return-object v0
+.end method
+
+.method public static getBootloaderParameterSoftwareVersion()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "sw_version"
+
+    return-object v0
+.end method
+
+.method public static getCrashreporterModulus()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "B2D6B06706E2B385723B4AB95E61ED3D5C3D720FF7B33F54AEC2868364B5BC6E8CF6FD80B23499A62CFB8060A4601E995DBAAC41832DDCCB96C72B70DFD8C0FA93F9CB304ABAF1EC35F3B77C93D68D0E405C39D952B41D29F547C714F91BE4AC1FC57A8B7FA728D1F0ADB50B1AB649AE207F42F016A58F70E519258DFD76CB5D41715EB79F10F1004E3A2CC15C90FD5329093AC4C4178E912496C3172C368C70258644C1B583EE211BD92F229577A78AEF87D7C98E3DF18DAB577CFDEFAC453466345597BB02EA6FE519BE45471DFD89EBC33739E82153C0806A5109D76CF5B2F3B0E012CC6CD77B521E844585D869F0CA527B79DBDB1BEA3E0EFD8085146E23"
+
+    return-object v0
+.end method
+
+.method public static getDeviceIdToken()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "20MNetflix2010"
+
+    return-object v0
+.end method
+
+.method public static getEsnDelim()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "-"
+
+    return-object v0
+.end method
+
+.method public static getEsnPrefix()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "NFANDROID2-"
+
+    return-object v0
+.end method
+
+.method public static getKatnissDebugSignatureBytes()[B
+    .locals 1
+
+    const-string v0, "0\u0082\u0003\u00bd0\u0082\u0002\u00a5\u00a0\u0003\u0002\u0001\u0002\u0002\t\u0000\u0090\u0084\u00f4\u009a\u009cn-\u00d30\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0005\u0005\u00000u1\u000b0\t\u0006\u0003U\u0004\u0006\u0013\u0002US1\u00130\u0011\u0006\u0003U\u0004\u0008\u000c\nCalifornia1\u00160\u0014\u0006\u0003U\u0004\u0007\u000c\rMountain View1\u00140\u0012\u0006\u0003U\u0004\n\u000c\u000bGoogle Inc.1\u00100\u000e\u0006\u0003U\u0004\u000b\u000c\u0007Android1\u00110\u000f\u0006\u0003U\u0004\u0003\u000c\u0008tvsearch0\u001e\u0017\r140715161554Z\u0017\r411130161554Z0u1\u000b0\t\u0006\u0003U\u0004\u0006\u0013\u0002US1\u00130\u0011\u0006\u0003U\u0004\u0008\u000c\nCalifornia1\u00160\u0014\u0006\u0003U\u0004\u0007\u000c\rMountain View1\u00140\u0012\u0006\u0003U\u0004\n\u000c\u000bGoogle Inc.1\u00100\u000e\u0006\u0003U\u0004\u000b\u000c\u0007Android1\u00110\u000f\u0006\u0003U\u0004\u0003\u000c\u0008tvsearch0\u0082\u0001\"0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0001\u0005\u0000\u0003\u0082\u0001\u000f\u00000\u0082\u0001\n\u0002\u0082\u0001\u0001\u0000\u00e3i\u0017\u00d9\u00b8q\u001bT\u00e3Ft\n\u007f\u00ddp,\u00a2\u00a9\u00a7\u009b\u001f~\u0004\u0002\u00d5P\u00cf\u00f5\u001f\u0000UyH\t\u00ee\u00ff\u0091\u00ab?C\u00f1\u00941u\u0090\u0083]\u00e2\u00f3\u00e6nl\u0005\u0003g\u00f2\u00e3^\u00ack\u00de\u00ce\u008f1\u0089\u0081\u00fbo\u00c8\u00eb\u00d3\u00cc\u001b\u0004%\u00d9\u0018\u00d4\u0086\u00e38\u0097L\u00e0]\u00b4^\u00b9\u00b5\u00d0\u00d5\u00aclv#&\u001e\u00bd\u00ab\u00bf\u009c\u00aav\u0015\u009c\u00b8\u00fa\u009e\u007f\u009b\u00ea\u00aa.Ov\u0018>\u00c7\u0099qd\'\u00c6\u00c1\u0081\u00cf\u00da{\u00f9}i\u00b4_\u001c\u00f5\u00ca\u00c7\u00cf_!\u00d0\u00f7c\u00c9M{\u00bd\u008b^\u00b5\u00f3\u00dc\u0085_\u0004\u00e6\u00bc>\u00dc}\u00f2\u00aa\u00b1\u00e9,\u0084\u00c9}g$\u0010\u00af\u00fc\u0088\u001e8d\u00ff\u0011,\u00e5\u00bej\u001e\u00b12.\u00bb\u0097}\u00bf\u00e2\t\u0019\u00d3\u00dah\rS\u00fb\u0091)U\u00be%0N\u00e0~\t\u0089\u009dN\u00fe\u0083\u00c0\u0091\u00c0\u00fekVP\u00b8\u00e2\u009b>%#\u00d1;]\u00f9K\u00e5N\u0012\n\u00af\u009cQ\u0084\u00bc\u009f\u00fdX)\u00a8pp\u00a3u\u00ba{\u00f0\u00d5\u00a7\u0002\u0003\u0001\u0000\u0001\u00a3P0N0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014\u001d\u00c9q\u00df\u00f3Dh[\u009a\u008d0\u00ee\u0090E\u00d2e\u00f0\u00c0<\u00d60\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0080\u0014\u001d\u00c9q\u00df\u00f3Dh[\u009a\u008d0\u00ee\u0090E\u00d2e\u00f0\u00c0<\u00d60\u000c\u0006\u0003U\u001d\u0013\u0004\u00050\u0003\u0001\u0001\u00ff0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0005\u0005\u0000\u0003\u0082\u0001\u0001\u0000\u009e\u0001\u00e1\u00ff\u0003\u00f5\u009b/\u009cT~\u0014\u00c6c\u00cd7\u0012W\u00ac\u0006\u001c\u00a9\u000b\u00f6=4\u00f9\u0098\u00e7\u00dev\u0007\u00a7{6\u00b2[b\u0090\u00c3\u00f0\u00b3\u001e\u00a9\u00a9\u009a\u00d5\u0089\u000b:[\u00b7\u0014)\u0081Cn\u00ea.\u00ecW\u00d5\u0095)Du\u00d0p.#\u0002|>\u0008\u0010\u00d2i\u00ac\u00fc\u0012\u00f2\u009c\u0006\u0097\u0011\u00a4\u00e4R~\u00f1\u0007\u0084&\u00bb0\u00c9\u0015\u008a\u00eb\u00d7\u00a4x\u00f9\u0018\u00e7R\u00b6uZ0Qg\u00b0\u00b1!\u00e3\u0092\u00ba\u000b%ZC\u00ad\u0099b\u00b4\u00ccw\u0000\u00a6B\u0018:\u008c\u000c\u0007m\u0097\u00f7\u0098\u008a\u0098\u000e\u00b5\u008b\u0006\u0015\u00cb$\u00d0\u0093\u0001\n\u0080\u00a3\n\u00f3S\u00ce\u0008\u00ea\u00cbC\u00b9\u00fa\u00e7zG\u00b9\u00bf\u00c1\u00c3/D\u00c9\u0005\u0093O#\u00f1z\u00e2\u0089\u008a\'J\u00cf\u0016\u00e9g\u00a8\u00b6\u00feu\u00ae&\\~\u001c\u00ea\u0019\u000fu\u0019\u00f2L\u0000\u00df^\u00d7\u0004C\u0002g\u00e3s>\u00acx\u00b7\u0097\u00f3\u00f1\u00da\u00a3$lJ\u0018\u00d2[\u00c7jJUR\u0015T\u00e5\u00f3K\u00b5\u0086t\u00fe\u00f9\u00dc\u00a0-mk\u00b5\u0010e\u00e5;"
+
+    .line 109
+    invoke-static {v0}, Lcom/netflix/mediaclient/repository/SecurityRepository;->extractKey(Ljava/lang/String;)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getKatnissReleaseSignatureBytes()[B
+    .locals 1
+
+    const-string v0, "0\u0082\u0003\u00bd0\u0082\u0002\u00a5\u00a0\u0003\u0002\u0001\u0002\u0002\t\u0000\u00af\u0018\u001f3\u00c8f\u0015_0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0005\u0005\u00000u1\u000b0\t\u0006\u0003U\u0004\u0006\u0013\u0002US1\u00130\u0011\u0006\u0003U\u0004\u0008\u000c\nCalifornia1\u00160\u0014\u0006\u0003U\u0004\u0007\u000c\rMountain View1\u00140\u0012\u0006\u0003U\u0004\n\u000c\u000bGoogle Inc.1\u00100\u000e\u0006\u0003U\u0004\u000b\u000c\u0007Android1\u00110\u000f\u0006\u0003U\u0004\u0003\u000c\u0008tvsearch0\u001e\u0017\r140715161615Z\u0017\r411130161615Z0u1\u000b0\t\u0006\u0003U\u0004\u0006\u0013\u0002US1\u00130\u0011\u0006\u0003U\u0004\u0008\u000c\nCalifornia1\u00160\u0014\u0006\u0003U\u0004\u0007\u000c\rMountain View1\u00140\u0012\u0006\u0003U\u0004\n\u000c\u000bGoogle Inc.1\u00100\u000e\u0006\u0003U\u0004\u000b\u000c\u0007Android1\u00110\u000f\u0006\u0003U\u0004\u0003\u000c\u0008tvsearch0\u0082\u0001\"0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0001\u0005\u0000\u0003\u0082\u0001\u000f\u00000\u0082\u0001\n\u0002\u0082\u0001\u0001\u0000\u00b8\u0097\u00feU\u0094\u00de\u0090q5\u00f6\u0095\u001c\u009c\u000c\u00b1\u0012\u00ca\u00e8\u00ecuP\u00fb\u00d6\u00fc\u0002\u00c5\u00bew\u00ae\u00c9\u0094\u00c8\u00d45\u0006\u001f\u00f5\u00a02\u00ab\u00e5Hy\u00c9u\u00dai [\u00e6\u0005\u00df3\u000ek\u0094?\u0001\u00f4\u00aaU\u00ef\u009c\u001b\u00cb\u00ef\u00a0\u0010:RS\u0094\u00c2dG\u00ee\u00a9|\u0012\u0010\\n\u00edp\u00d0\u0001\u0019>5\u00e8\u0099\u0005\u00c5\u00cdc\u00c3{s)\u00a7\u00d0\u00a6\u00ebj-\u00d7\u00d8\u0099D1\u0005\u00f4EF\u00f2\u00af\u00be\u00ab\u00c6\u00bc_P\u00a2^\u00b1b\u009bsv\u00a7\u00cc\u0095\u0015\u00f1^\u0012U\u007fG\u00fa\u0011\u001bm\u00ac\u0089J\u000b\u0086\u00d5L~\u00c5\u00efs\u008c\u00c0L\u001b\u0084P7j\u00b31\u0087u-\u0001-\u009a\u009c\u000b\u000c\u0088\u001dJ\u00db\u0088*\n\u00cfp\u00d0\u009aN\u0082\u00f3\u0012\u0097g\u001a\u00f4m\u00ae\u009a\u00e5tI\u0006\u00f6\u00af\u0002\u00a4rK\u00bb\u00bdl\u00cc\u00dea\u00f4=}\u00f0W\u009a\u00e0\u0019;\u00c99\u00e1\u00ad\u00e2\u00bc\u0000\u00ba\u00b7\u00b8,\u00f9\u00e4\u0015_\u00e3m\u00de\u00c3\u00e1ni\u00e3\u00d4\u008a\u00ac8!\u00a69\u008f\u00f0\u00ce\u00e1\u00ae\u0017\u0002\u0003\u0001\u0000\u0001\u00a3P0N0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014\u00f6\u00f3\u00f0P\u0090\u001a\u009aX\u0015\u0090\u00b2R\u00cd\u00ebt!\u00b2\u00a3\u00e2C0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0080\u0014\u00f6\u00f3\u00f0P\u0090\u001a\u009aX\u0015\u0090\u00b2R\u00cd\u00ebt!\u00b2\u00a3\u00e2C0\u000c\u0006\u0003U\u001d\u0013\u0004\u00050\u0003\u0001\u0001\u00ff0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0005\u0005\u0000\u0003\u0082\u0001\u0001\u0000\u00ac\u00e7\u00b6\"RI\u009f\u00db\u00a9\t\u0015\u0084\u008bo\u00eb\u0084\u008e\u009fs\u0085u\u0086\u00ba\u00e8Z\u001a\u00be\u0001\u00eb\u00af\u000b<\u00ca_\u00ac%\u00d9A\u00a6\u0082\u009e`\u00eak,\u0090h4\n\u00e9i\u00f4\u0001hf}\u0015\u0014\u00a9\u0095L\u008dk\u0080\u009e\u00d1\u009f\u001fzz6^\u0001\u009d\u00d7\u00ba\u001c\u0012\t\u0088\u0000\u0010=:J2\u0006\u00b8\u00c0\u00a2K:r\u00ce\u00b2\u00c4\u001du\u00fe\u00d8&Z\u00eb\u00000\u00d1\t\u00da\u00f3\u00dfi2-E\u0019\u00da\u00a2\u00d6]\u00b6!2\u00e8\u009d\u0094\u008a\u00c97z\u0013\u00a7x,u\u00d5\u008f\u0017\u00fa)\\GW%\u0012\u00c9j\u00bd\u00dd\u00ae\u0080e\u0084\u001cG\u00da\u00ed\u0012\u00ab\u0093\n\u00dfs\u0010e\u00f1\\y\u00e1V\u00db\u00c0B\u00a011\u0099y\u00b5\u00a5\u00f0/\u00d7\u00b0\u00b4\u00ad\u00ffw\u0004\u0019\u00af=+Y\u00e7\u008e\u00d2\u00a0,\u0095G\u00f6\u00d3G|\u0089=\u0001\u00d8\u00a1u\u00c3D\u0098\u008d\u009c\u008cv\u00d9\u00c7y\u00c8\u00dc\u00e4\u00f6\u00e07\u0091//\u00c0\"\u008c\u00d4\u00b0gj\u00a7.\u0005\u001be\u000e\u000f7\u00ec\u0087\u00fa\u00a9P5[J#W\u00c2\u009b"
+
+    .line 105
+    invoke-static {v0}, Lcom/netflix/mediaclient/repository/SecurityRepository;->extractKey(Ljava/lang/String;)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getModelDelim()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "_"
+
+    return-object v0
+.end method
+
+.method public static getSafetyNetApiKey()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "AIzaSyCtHJg8Yy7zEn0N9IowXEH9IbNnJuGUvKg"
+
+    return-object v0
+.end method

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">Instabet verżjoni ġdida tal-applikazzjoni. Tixtieq taġġorna?</string>
+    <string name="label_cancel">Kkanċella</string>
+    <string name="label_check_ntwk">It-tagħmir tiegħek mhux ikkonnettjat mal-Internet. Żgura li l-konnessjoni tiegħek qed taħdem u erġa’ pprova (%1$d).</string>
+    <string name="label_config_fetch_failed">Hemm problema fl-ikkonnettjar ma’ Netflix. Ipprova aktar tard (%1$d).</string>
+    <string name="label_config_not_permitted">Din il-verżjoni tal-applikazzjoni ta’ Netflix mhijiex kompatibbli mat-tagħmir tiegħek (%1$d).</string>
+    <string name="label_config_ssl_Error">Żgura li t-tagħmir għandu konnettività tan-netwerk u li s-settings tad-Data u l-Ħin huma preċiżi (%1$d).</string>
+    <string name="label_could_not_launch">Ma stajniex inniedu Netflix</string>
+    <string name="label_drm_cdm_provisioning_failed">Jiddispjaċina ma stajniex nilħqu s-servizz ta’ Netflix. Iċċekkja s-Settings tan-Netwerk biex tikkonnettja ma’ netwerk disponibbli u uża Netflix (%1$d).</string>
+    <string name="label_error">Żball</string>
+    <string name="label_error_default">Jiddispjaċina ma stajniex nilħqu s-servizz ta’ Netflix. Ipprova aktar tard. Jekk il-problema tippersisti żur il-websajt ta’ Netflix (0000).</string>
+    <string name="label_exit">Oħroġ</string>
+    <string name="label_launching_netflix">Qed inniedu Netflix…</string>
+    <string name="label_mediadrm_error">Jiddispjaċina ma stajniex nilħqu s-servizz ta’ Netflix. Ipprova rristartja l-applikazzjoni ta’ Netflix (%1$d).</string>
+    <string name="label_mediadrm_resource_error">Dan it-tagħmir m’għandux biżżejjed riżorsi għal Netflix (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">Din il-verżjoni tal-applikazzjoni ta’ Netflix mhijiex kompatibbli mat-tagħmir tiegħek (%1$d).</string>
+    <string name="label_ok">OK</string>
+    <string name="label_preapp_continue_watching">Kompli Ara</string>
+    <string name="label_preapp_genric_reco">Netflix jirrakkomanda</string>
+    <string name="label_preapp_personal_reco">Netflix Jirrikmanda għal %1$s</string>
+    <string name="label_reset">Rrisettja</string>
+    <string name="label_status">Status</string>
+    <string name="label_waiting_network_connection">Qed jistenna l-konnessjoni tan-netwerk</string>
+    <string name="label_warning">Twissija</string>
+    <string name="label_whitelisting_error">Dan it-tagħmir mhuwiex ottimizzat għal Netflix (%1$d)</string>
+    <string name="search_netflix">Fittex Netflix</string>
+</resources>

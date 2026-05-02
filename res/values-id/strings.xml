@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">Tersedia versi baru aplikasi. Anda ingin melakukan pembaruan?</string>
+    <string name="label_cancel">Batal</string>
+    <string name="label_check_ntwk">Perangkat Anda mungkin tidak terhubung ke Internet. Pastikan koneksi yang Anda miliki berfungsi dan coba lagi (%1$d).</string>
+    <string name="label_config_fetch_failed">Ada masalah saat menyambung ke Netflix. Silakan coba lagi nanti (%1$d).</string>
+    <string name="label_config_not_permitted">Versi aplikasi Netflix ini tidak kompatibel dengan perangkat Anda (%1$d).</string>
+    <string name="label_config_ssl_Error">Pastikan perangkat Anda memiliki konektivitas jaringan dan pengaturan Tanggal dan Waktu akurat (%1$d).</string>
+    <string name="label_could_not_launch">Tidak dapat membuka Netflix</string>
+    <string name="label_drm_cdm_provisioning_failed">Maaf kami tidak dapat menjangkau layanan Netflix. Silakan cek Pengaturan Jaringan untuk menyambung ke jaringan yang tersedia dan menggunakan Netflix (%1$d).</string>
+    <string name="label_error">Kesalahan</string>
+    <string name="label_error_default">Maaf kami tidak dapat menjangkau layanan Netflix. Silakan coba lagi nanti. Jika masih bermasalah, silakan kunjungi situs web Netflix (0000).</string>
+    <string name="label_exit">Keluar</string>
+    <string name="label_launching_netflix">Membuka Netflix…</string>
+    <string name="label_mediadrm_error">Maaf kami tidak dapat menjangkau layanan Netflix. Silakan coba nyalakan ulang aplikasi Netflix (%1$d).</string>
+    <string name="label_mediadrm_resource_error">Perangkat tidak memiliki cukup sumber daya untuk Netflix (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">Versi aplikasi Netflix ini tidak kompatibel dengan perangkat Anda (%1$d).</string>
+    <string name="label_ok">OK</string>
+    <string name="label_preapp_continue_watching">Lanjutkan Menonton</string>
+    <string name="label_preapp_genric_reco">Netflix menyarankan</string>
+    <string name="label_preapp_personal_reco">Netflix Merekomendasikan %1$s</string>
+    <string name="label_reset">Set Ulang</string>
+    <string name="label_status">Status</string>
+    <string name="label_waiting_network_connection">Menunggu koneksi jaringan</string>
+    <string name="label_warning">Peringatan</string>
+    <string name="label_whitelisting_error">Perangkat ini tidak dioptimalkan untuk Netflix (%1$d)</string>
+    <string name="search_netflix">Cari Netflix</string>
+</resources>

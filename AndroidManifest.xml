@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:allowAudioPlaybackCapture="false" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.netflix.ninja" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <queries>
+        <intent>
+            <action android:name="com.netflix.ninja.action.*"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.TOKEN_REQUEST"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.PADI_TOKEN_REQUEST"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.DET_TOKEN"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.DET_RESPONSE"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.SND_RESPONSE"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.USER_SIGNIN"/>
+        </intent>
+        <intent>
+            <action android:name="com.netflix.ninja.intent.action.*"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.katniss"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.marvin.talkback.action.*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.netflix.partner.ncm"/>
+        <package android:name="com.google.android.apps.mediashell"/>
+    </queries>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.software.leanback"/>
+    <uses-feature android:name="nrdp.modelgroup" android:required="true"/>
+    <permission android:name="com.netflix.ninja.permission.ESN" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.NETFLIX_KEY" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.TILES" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.TOKEN" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.SND" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.DET" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.PREAPP_COOKIE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.netflix.ninja.permission.APP_STATUS" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.device.permission.COMRADE_CAPABILITIES"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.netflix.ninja.permission.ESN"/>
+    <uses-permission android:name="com.netflix.ninja.permission.NETFLIX_KEY"/>
+    <uses-permission android:name="com.netflix.ninja.permission.TILES"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
+    <uses-permission android:name="com.netflix.ninja.permission.TOKEN"/>
+    <uses-permission android:name="com.netflix.ninja.permission.PREAPP_COOKIE"/>
+    <uses-permission android:name="com.netflix.ninja.permission.SND"/>
+    <uses-permission android:name="com.netflix.ninja.permission.DET"/>
+    <uses-permission android:name="com.netflix.ninja.permission.APP_STATUS"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/ic_banner" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:logo="@mipmap/ic_banner" android:name="com.netflix.ninja.NetflixApplication" android:networkSecurityConfig="@xml/network_security_config" android:theme="@style/Theme.NetflixDefault">
+        <activity android:banner="@mipmap/ic_banner" android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|touchscreen|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.netflix.ninja.MainActivity" android:resizeableActivity="false" android:theme="@style/Theme.NetflixDefault">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.netflix.action.NETFLIX_KEY_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.cast.action.START"/>
+                <data android:host="Netflix" android:scheme="cast"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.netflix.action.DIAL_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.netflix.amazon.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="www.netflix.com" android:scheme="nflx"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.netflix.com" android:scheme="http"/>
+                <data android:host="www.netflix.com" android:scheme="https"/>
+                <data android:pathPattern="/title.*"/>
+                <data android:pathPattern="/.*/title.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.netflix.com" android:scheme="http"/>
+                <data android:host="www.netflix.com" android:scheme="https"/>
+                <data android:pathPattern="/watch.*"/>
+                <data android:pathPattern="/.*/watch.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.netflix.com" android:scheme="http"/>
+                <data android:host="www.netflix.com" android:scheme="https"/>
+                <data android:pathPattern="/browse"/>
+                <data android:pathPattern="/home"/>
+                <data android:pathPattern="/.*/home"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.netflix.com" android:scheme="http"/>
+                <data android:host="www.netflix.com" android:scheme="https"/>
+                <data android:pathPattern="/deeplink.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="netflix"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="isGame" android:value="false"/>
+        <meta-data android:name="whisperplay" android:resource="@xml/whisperplay"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:exported="true" android:name="com.netflix.ninja.NetflixKeyReceiver" android:permission="com.netflix.ninja.permission.NETFLIX_KEY">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.intent.action.NETFLIX_KEY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.EsnInquiryReceiver" android:permission="com.netflix.ninja.permission.ESN">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.intent.action.ESN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.PreAppInitTilesReceiver" android:permission="com.netflix.ninja.permission.TILES">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.intent.action.INIT_TILES"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.DETBroadcastReceiver" android:permission="com.netflix.ninja.permission.DET">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.intent.action.DET_REQUEST"/>
+                <action android:name="com.netflix.ninja.intent.action.DET_TOKEN_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.SNDBroadcastReceiver" android:permission="com.netflix.ninja.permission.SND">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.intent.action.SND_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.InitializeProgramsReceiver">
+            <intent-filter>
+                <action android:name="android.media.tv.action.INITIALIZE_PROGRAMS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.CapabilityRequestReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.device.REQUEST_CAPABILITIES"/>
+                <action android:name="com.netflix.ninja.REQUEST_SIGNIN_STATUS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.netflix.ninja.PreAppRecoRefreshJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.netflix.ninja.PreAppInitTileJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.netflix.ninja.DebugJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.netflix.ninja.alwaysfresh.AlwaysFreshNewJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.netflix.ninja.DialStopReceiver">
+            <intent-filter>
+                <action android:name="com.netflix.action.DIAL_STOP"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.netflix.mediaclient.preapp" android:exported="true" android:name="com.netflix.mediaclient.preapp.PreAppRecoBuilder$PreAppRecoContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="38954a1ab1c70171c155e9ea4a4cea76"/>
+        <service android:enabled="true" android:exported="true" android:name="com.netflix.ninja.NetflixService">
+            <intent-filter>
+                <action android:name="com.netflix.ninja.NetflixService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.netflix.mediaclient.service.fcm.FcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.netflix.mediaclient.service.fcm.FcmJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.netflix.mediaclient.service.preapp.DETTokenRefreshJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="com.dolby.android.audio" android:required="false"/>
+        <provider android:authorities="com.netflix.ninja.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:authorities="com.netflix.ninja.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.netflix.ninja.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="38ea06d0-344b-4309-b798-580618069714"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

@@ -1,0 +1,143 @@
+.class public final Lcom/netflix/mediaclient/service/preapp/PreAppWorker;
+.super Landroidx/work/Worker;
+.source "PreAppWorker.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/netflix/mediaclient/service/preapp/PreAppWorker$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u0000 \u000b2\u00020\u0001:\u0001\u000bB\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\t\u001a\u00020\nH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u000c"
+    }
+    d2 = {
+        "Lcom/netflix/mediaclient/service/preapp/PreAppWorker;",
+        "Landroidx/work/Worker;",
+        "context",
+        "Landroid/content/Context;",
+        "workerParams",
+        "Landroidx/work/WorkerParameters;",
+        "(Landroid/content/Context;Landroidx/work/WorkerParameters;)V",
+        "getContext",
+        "()Landroid/content/Context;",
+        "doWork",
+        "Landroidx/work/ListenableWorker$Result;",
+        "Companion",
+        "app_ninjaRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x4,
+        0x2
+    }
+.end annotation
+
+
+# static fields
+.field public static final BUNDLE_FORCE_REFRESH:Ljava/lang/String; = "forceRefresh"
+
+.field public static final Companion:Lcom/netflix/mediaclient/service/preapp/PreAppWorker$Companion;
+
+.field private static final TAG:Ljava/lang/String;
+
+
+# instance fields
+.field private final context:Landroid/content/Context;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/netflix/mediaclient/service/preapp/PreAppWorker$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/netflix/mediaclient/service/preapp/PreAppWorker$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/netflix/mediaclient/service/preapp/PreAppWorker;->Companion:Lcom/netflix/mediaclient/service/preapp/PreAppWorker$Companion;
+
+    const-string v0, "nf_preapp_worker"
+
+    .line 10
+    sput-object v0, Lcom/netflix/mediaclient/service/preapp/PreAppWorker;->TAG:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+    .locals 1
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "workerParams"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    invoke-direct {p0, p1, p2}, Landroidx/work/Worker;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+
+    iput-object p1, p0, Lcom/netflix/mediaclient/service/preapp/PreAppWorker;->context:Landroid/content/Context;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public doWork()Landroidx/work/ListenableWorker$Result;
+    .locals 3
+
+    .line 16
+    invoke-virtual {p0}, Lcom/netflix/mediaclient/service/preapp/PreAppWorker;->getInputData()Landroidx/work/Data;
+
+    move-result-object v0
+
+    const-string v1, "forceRefresh"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroidx/work/Data;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    .line 17
+    sget-object v1, Lcom/netflix/mediaclient/service/preapp/PreAppManager;->Companion:Lcom/netflix/mediaclient/service/preapp/PreAppManager$Companion;
+
+    invoke-virtual {v1}, Lcom/netflix/mediaclient/service/preapp/PreAppManager$Companion;->getInstance()Lcom/netflix/mediaclient/service/preapp/PreAppManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/netflix/mediaclient/service/preapp/PreAppManager;->fetchDiscoveryMetadata(Z)V
+
+    .line 18
+    invoke-static {}, Landroidx/work/ListenableWorker$Result;->success()Landroidx/work/ListenableWorker$Result;
+
+    move-result-object v0
+
+    const-string v1, "Result.success()"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final getContext()Landroid/content/Context;
+    .locals 1
+
+    .line 7
+    iget-object v0, p0, Lcom/netflix/mediaclient/service/preapp/PreAppWorker;->context:Landroid/content/Context;
+
+    return-object v0
+.end method

@@ -1,0 +1,210 @@
+.class public abstract Lo/jPv;
+.super Lo/isz;
+.source ""
+
+
+# instance fields
+.field private a:Z
+
+.field private al:Z
+
+.field private d:Lo/kyv$d;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lo/isz;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Lo/jPv;->a:Z
+
+    .line 7
+    iput-boolean v0, p0, Lo/jPv;->al:Z
+
+    return-void
+.end method
+
+.method private w()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lo/jPv;->d:Lo/kyv$d;
+
+    if-nez v0, :cond_0
+
+    .line 5
+    invoke-super {p0}, Lo/isy;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 11
+    new-instance v1, Lo/kyv$d;
+
+    invoke-direct {v1, v0, p0}, Lo/kyv$d;-><init>(Landroid/content/Context;Landroidx/fragment/app/Fragment;)V
+
+    .line 14
+    iput-object v1, p0, Lo/jPv;->d:Lo/kyv$d;
+
+    .line 16
+    invoke-super {p0}, Lo/isy;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 20
+    invoke-static {v0}, Lo/kxV;->a(Landroid/content/Context;)Z
+
+    move-result v0
+
+    .line 24
+    iput-boolean v0, p0, Lo/jPv;->a:Z
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bt_()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lo/jPv;->al:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 6
+    iput-boolean v0, p0, Lo/jPv;->al:Z
+
+    .line 8
+    invoke-virtual {p0}, Lcom/netflix/mediaclient/android/fragment/Hilt_NetflixFrag;->generatedComponent()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 12
+    check-cast v0, Lo/jPI;
+
+    .line 15
+    move-object v1, p0
+
+    check-cast v1, Lcom/netflix/mediaclient/ui/profiles/languages/impl/ProfileLanguagesFragment;
+
+    .line 17
+    invoke-interface {v0, v1}, Lo/jPI;->e(Lcom/netflix/mediaclient/ui/profiles/languages/impl/ProfileLanguagesFragment;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final getContext()Landroid/content/Context;
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lo/isy;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 7
+    iget-boolean v0, p0, Lo/jPv;->a:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    .line 13
+    :cond_0
+    invoke-direct {p0}, Lo/jPv;->w()V
+
+    .line 16
+    iget-object v0, p0, Lo/jPv;->d:Lo/kyv$d;
+
+    return-object v0
+.end method
+
+.method public final onAttach(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 4
+    invoke-super {p0, p1}, Lo/isy;->onAttach(Landroid/app/Activity;)V
+
+    .line 5
+    iget-object v0, p0, Lo/jPv;->d:Lo/kyv$d;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Lo/kys;->e(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eq v0, p1, :cond_0
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x1
+
+    :goto_0
+    const-string v0, "onAttach called multiple times with different Context! Hilt Fragments should not be retained."
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {p1, v0, v1}, Lo/kyA;->d(ZLjava/lang/String;[Ljava/lang/Object;)V
+
+    .line 6
+    invoke-direct {p0}, Lo/jPv;->w()V
+
+    .line 7
+    invoke-virtual {p0}, Lcom/netflix/mediaclient/android/fragment/Hilt_NetflixFrag;->bt_()V
+
+    return-void
+.end method
+
+.method public final onAttach(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lo/isy;->onAttach(Landroid/content/Context;)V
+
+    .line 2
+    invoke-direct {p0}, Lo/jPv;->w()V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/netflix/mediaclient/android/fragment/Hilt_NetflixFrag;->bt_()V
+
+    return-void
+.end method
+
+.method public final onGetLayoutInflater(Landroid/os/Bundle;)Landroid/view/LayoutInflater;
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lo/isy;->onGetLayoutInflater(Landroid/os/Bundle;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    .line 7
+    new-instance v0, Lo/kyv$d;
+
+    invoke-direct {v0, p1, p0}, Lo/kyv$d;-><init>(Landroid/view/LayoutInflater;Landroidx/fragment/app/Fragment;)V
+
+    .line 10
+    invoke-virtual {p1, v0}, Landroid/view/LayoutInflater;->cloneInContext(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    return-object p1
+.end method

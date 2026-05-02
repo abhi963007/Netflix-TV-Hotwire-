@@ -1,0 +1,15 @@
+# Build artifacts
+dist/
+build/
+*.apk
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Smali temporary dex caches
+smali*/*.dex

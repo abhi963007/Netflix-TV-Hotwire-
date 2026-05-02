@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">New version of application found. Do you want to update?</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_check_ntwk">Your device may not be connected to the Internet. Please make sure your connection is working and try again (%1$d).</string>
+    <string name="label_config_fetch_failed">There is a problem connecting to Netflix. Please try again later (%1$d).</string>
+    <string name="label_config_not_permitted">This version of Netflix app is not compatible with your device (%1$d).</string>
+    <string name="label_config_ssl_Error">Please make sure that your device has network connectivity and the Date and Time settings are accurate (%1$d).</string>
+    <string name="label_could_not_launch">Could not launch Netflix</string>
+    <string name="label_drm_cdm_provisioning_failed">Sorry we could not reach the Netflix service. Please check Network Settings to connect to an available network and use Netflix (%1$d).</string>
+    <string name="label_error">Error</string>
+    <string name="label_error_default">Sorry we could not reach the Netflix service. Please try again later. If the problems persists, please visit the Netflix website (0000).</string>
+    <string name="label_exit">Exit</string>
+    <string name="label_launching_netflix">Launching Netflix…</string>
+    <string name="label_mediadrm_error">Sorry we could not reach the Netflix service. Please try to restart the Netflix application (%1$d).</string>
+    <string name="label_mediadrm_resource_error">The device does not have enough free space for Netflix (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">This version of Netflix app is not compatible with your device (%1$d).</string>
+    <string name="label_ok">OK</string>
+    <string name="label_preapp_continue_watching">Continue Watching</string>
+    <string name="label_preapp_genric_reco">Netflix recommends</string>
+    <string name="label_preapp_personal_reco">Netflix recommends for %1$s</string>
+    <string name="label_reset">Reset</string>
+    <string name="label_status">Status</string>
+    <string name="label_waiting_network_connection">Waiting for network connection</string>
+    <string name="label_warning">Warning</string>
+    <string name="label_whitelisting_error">This device is not optimised for Netflix (%1$d)</string>
+    <string name="search_netflix">Search Netflix</string>
+</resources>

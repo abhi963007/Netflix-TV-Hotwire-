@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">נמצאה גרסה חדשה לאפליקציה. לעדכן?</string>
+    <string name="label_cancel">בטל</string>
+    <string name="label_check_ntwk">ייתכן שהמכשיר שלך לא מחובר לאינטרנט. ודא שהחיבור פעיל ונסה ושב (%1$d).</string>
+    <string name="label_config_fetch_failed">קיימת בעיה בחיבור ל-Netflix. נסה שוב מאוחר יותר (%1$d).</string>
+    <string name="label_config_not_permitted">הגרסה של אפליקציית Netflix אינה תואמת למכשיר שברשותך (%1$d).</string>
+    <string name="label_config_ssl_Error">ודא שלמכשיר יש אפשרות חיבור לרשת ושהגדרות התאריך והשעה מדויקות (%1$d).</string>
+    <string name="label_could_not_launch">לא ניתן להפעיל את Netflix</string>
+    <string name="label_drm_cdm_provisioning_failed">שירות Netflix אינו זמין כרגע. בדוק את הגדרות הרשת כדי להתחבר לרשת זמינה ולהשתמש ב-Netflix‏ (%1$d).</string>
+    <string name="label_error">שגיאה</string>
+    <string name="label_error_default">שירות Netflix אינו זמין כרגע. נסה שוב מאוחר יותר. אם הבעיות נמשכות, בקר באתר האינטרנט של Netflix‏ (0000).</string>
+    <string name="label_exit">יציאה</string>
+    <string name="label_launching_netflix">מפעיל את Netflix…</string>
+    <string name="label_mediadrm_error">שירות Netflix אינו זמין כרגע. נסה להפעיל את אפליקציית Netflix מחדש (%1$d).</string>
+    <string name="label_mediadrm_resource_error">אין מספיק משאבים במכשיר לצורך הפעלת Netflix‏ (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">הגרסה של אפליקציית Netflix אינה תואמת למכשיר שברשותך (%1$d).</string>
+    <string name="label_ok">אישור</string>
+    <string name="label_preapp_continue_watching">המשך בצפייה</string>
+    <string name="label_preapp_genric_reco">Netflix ממליצה</string>
+    <string name="label_preapp_personal_reco">Netflix ממליצה על %1$</string>
+    <string name="label_reset">איפוס</string>
+    <string name="label_status">סטטוס</string>
+    <string name="label_waiting_network_connection">ממתין לחיבור לרשת</string>
+    <string name="label_warning">אזהרה</string>
+    <string name="label_whitelisting_error">התקן זה לא עבר אופטימיזציה ל-Netflix‏(%1$d)</string>
+    <string name="search_netflix">חפש ב-Netflix</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="label_app_update_found">Uygulamanın yeni sürümü bulundu. Güncellemek istiyor musunuz?</string>
+    <string name="label_cancel">İptal</string>
+    <string name="label_check_ntwk">Cihazınız internete bağlı olmayabilir. Lütfen bağlantınızın çalıştığından emin olunuz ve tekrar deneyiniz (%1$d).</string>
+    <string name="label_config_fetch_failed">"Netflix'le bağlantı kurulamadı. Lütfen daha sonra tekrar deneyiniz (%1$d)."</string>
+    <string name="label_config_not_permitted">Netflix uygulamasının bu sürümü cihazınızla uyumlu değildir (%1$d).</string>
+    <string name="label_config_ssl_Error">Lütfen cihazınızın ağa bağlı olduğundan ve Tarih ve Saat ayarlarının doğru olduğundan emin olunuz (%1$d).</string>
+    <string name="label_could_not_launch">Netflix başlatılamadı</string>
+    <string name="label_drm_cdm_provisioning_failed">"Üzgünüz, Netflix hizmetine ulaşamadık. Kullanılabilir bir ağa bağlanmak ve Netflix'i kullanmak için lütfen Ağ Ayarları'nı kontrol ediniz (%1$d)."</string>
+    <string name="label_error">Hata</string>
+    <string name="label_error_default">Üzgünüz, Netflix hizmetine ulaşamadık. Lütfen daha sonra yeniden deneyin. Sorunlar devam ederse lütfen Netflix web sitesini ziyaret ediniz (0000).</string>
+    <string name="label_exit">Çık</string>
+    <string name="label_launching_netflix">Netflix başlatılıyor…</string>
+    <string name="label_mediadrm_error">Üzgünüz, Netflix hizmetine ulaşamadık. Lütfen Netflix uygulamasını yeniden başlatmayı deneyiniz (%1$d).</string>
+    <string name="label_mediadrm_resource_error">Cihazın Netflix için yeterli kaynağı yok (%1$d).</string>
+    <string name="label_mediadrm_widevine_not_l1_error">Netflix uygulamasının bu sürümü cihazınızla uyumlu değildir (%1$d).</string>
+    <string name="label_ok">Tamam</string>
+    <string name="label_preapp_continue_watching">İzlemeye Devam Edin</string>
+    <string name="label_preapp_genric_reco">Netflix Önerileri</string>
+    <string name="label_preapp_personal_reco">Netflix %1$s’yi Öneriyor</string>
+    <string name="label_reset">Sıfırla</string>
+    <string name="label_status">Durum</string>
+    <string name="label_waiting_network_connection">Ağ bağlantısı bekleniyor</string>
+    <string name="label_warning">Uyarı</string>
+    <string name="label_whitelisting_error">Bu cihaz Netflix için optimize edilmemiştir (%1$d)</string>
+    <string name="search_netflix">"Netflix'te Ara"</string>
+</resources>

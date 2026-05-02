@@ -1,0 +1,144 @@
+.class public abstract Lo/hfE;
+.super Landroid/app/job/JobService;
+.source ""
+
+# interfaces
+.implements Lo/kyy;
+
+
+# instance fields
+.field private volatile b:Lo/kyt;
+
+.field private d:Z
+
+.field private e:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Landroid/app/job/JobService;-><init>()V
+
+    .line 6
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    iput-object v0, p0, Lo/hfE;->e:Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    .line 12
+    iput-boolean v0, p0, Lo/hfE;->d:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public attachBaseContext(Landroid/content/Context;)V
+    .locals 0
+
+    .line 41
+    invoke-super {p0, p1}, Landroid/app/job/JobService;->attachBaseContext(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public final generatedComponent()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lo/hfE;->b:Lo/kyt;
+
+    if-nez v0, :cond_1
+
+    .line 5
+    iget-object v0, p0, Lo/hfE;->e:Ljava/lang/Object;
+
+    .line 7
+    monitor-enter v0
+
+    .line 8
+    :try_start_0
+    iget-object v1, p0, Lo/hfE;->b:Lo/kyt;
+
+    if-nez v1, :cond_0
+
+    .line 12
+    new-instance v1, Lo/kyt;
+
+    .line 14
+    invoke-direct {v1, p0}, Lo/kyt;-><init>(Landroid/app/Service;)V
+
+    .line 17
+    iput-object v1, p0, Lo/hfE;->b:Lo/kyt;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    :cond_0
+    monitor-exit v0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    .line 24
+    monitor-exit v0
+
+    .line 25
+    throw v1
+
+    .line 26
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lo/hfE;->b:Lo/kyt;
+
+    .line 28
+    invoke-virtual {v0}, Lo/kyt;->generatedComponent()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public onCreate()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lo/hfE;->d:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 6
+    iput-boolean v0, p0, Lo/hfE;->d:Z
+
+    .line 8
+    invoke-virtual {p0}, Lo/hfE;->generatedComponent()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 12
+    check-cast v0, Lo/hfV;
+
+    .line 15
+    move-object v1, p0
+
+    check-cast v1, Lcom/netflix/mediaclient/service/job/NetflixJobService;
+
+    .line 17
+    invoke-interface {v0, v1}, Lo/hfV;->a(Lcom/netflix/mediaclient/service/job/NetflixJobService;)V
+
+    .line 20
+    :cond_0
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
+
+    return-void
+.end method

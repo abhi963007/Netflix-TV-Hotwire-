@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<whisperplay>
+    <dial>
+        <application>
+            <dialid>Netflix</dialid>
+            <startAction>com.netflix.amazon.action.DIAL</startAction>
+            <stopAction>com.netflix.action.DIAL_STOP</stopAction>
+        </application>
+    </dial>
+</whisperplay>

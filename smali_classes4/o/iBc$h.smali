@@ -1,0 +1,43 @@
+.class public final Lo/iBc$h;
+.super Lo/iBc;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo/iBc;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "h"
+.end annotation
+
+
+# static fields
+.field public static final c:Lo/iBc$h;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 3
+    new-instance v0, Lo/iBc$h;
+
+    invoke-direct {v0}, Lo/iBc$h;-><init>()V
+
+    .line 6
+    sput-object v0, Lo/iBc$h;->c:Lo/iBc$h;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

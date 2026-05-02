@@ -1,0 +1,25 @@
+.class final Lo/aTW$a;
+.super Lo/aTX$c;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo/aTW;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lo/aTX$c;-><init>(Ljava/lang/String;II)V
+
+    return-void
+.end method
